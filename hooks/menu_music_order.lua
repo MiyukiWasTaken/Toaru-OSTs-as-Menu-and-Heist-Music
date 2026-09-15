@@ -1,3 +1,62 @@
+local menu_music_order = {
+    "index-1_psi-missing",
+    "index-1_masterpiece",
+    "index-1_academy-city",
+    "index-1_anger",
+    "index-1_daily-life",
+    "index-1_despair",
+    "index-1_destiny-begins",
+    "index-1_funny-days",
+    "index-1_hurry-up",
+    "index-1_impatience",
+    "index-1_omen",
+    "index-1_road-to-school",
+    "index-1_summer-sunshine",
+    "index-1_the-thing-you-cant-get-back",
+    "index-1_vampire-killer",
+    "index-1_with-the-usual-friend",
+    "railgun_only-my-railgun",
+    "railgun_level5-judelight",
+    "railgun_future-gazer",
+    "railgun_determination",
+    "railgun_hopeless-feeling",
+    "railgun_place-to-return",
+    "railgun_plot",
+    "railgun_reality-to-confront",
+    "railgun_searcher",
+    "railgun_tea-time",
+    "railgun_that-day-continued",
+    "railgun_that-which-is-rumored",
+    "railgun_this",
+    "railgun_unstoppable-reason",
+    "index-2_no-buts",
+    "index-2_see-visions",
+    "index-2_amakusa-style-remix-of-church",
+    "index-2_introducing-the-strongest",
+    "index-2_misakas-sister",
+    "index-2_quiet-stratagem",
+    "index-2_study",
+    "railgun-s_sisters-noise",
+    "railgun-s_eternal-reality",
+    "railgun-s_accelerator",
+    "railgun-s_cruel-reality",
+    "railgun-s_determination-and-resolution",
+    "railgun-s_feeling-for-the-first-time",
+    "railgun-s_level-6-shift-project",
+    "accelerator_shadow-is-the-light",
+    "accelerator_atmospheric-continuum-mechanics-research-facility",
+    "accelerator_thoughts-of-esther",
+    "accelerator_you-arent-a-waste",
+    "railgun-t_final-phase",
+    "railgun-t_dual-existence",
+    "railgun-t_balloon-hunter",
+    "railgun-t_my-genius-ability",
+    "railgun-t_strawberry-yakisoba",
+    "index-3_gravitation",
+    "index-3_roar",
+    "index-3_dark-side-conflict"
+}
+
 local function get_track_id(entry)
     if type(entry) == "string" then
         return entry
@@ -10,48 +69,35 @@ local function get_track_id(entry)
     return nil
 end
 
-local function is_beardlib_track(entry, music_mods)
-    local track_id = get_track_id(entry)
-
-    if not track_id or type(music_mods) ~= "table" then
-        return false
-    end
-
-    if music_mods[track_id] ~= nil then
-        return true
-    end
-
-    for key, music_mod in pairs(music_mods) do
-        if key == track_id or music_mod == track_id then
-            return true
-        end
-
-        if type(music_mod) == "table" and get_track_id(music_mod) == track_id then
-            return true
-        end
-    end
-
-    return false
-end
-
 local function reorder_menu_music_list(list)
-    local vanilla_tracks = {}
-    local beardlib_tracks = {}
-    local music_mods = BeardLib and BeardLib.MusicMods
+    local ordered = {}
+    local used = {}
+
+    for _, wanted_id in ipairs(menu_music_order) do
+        for _, entry in ipairs(list) do
+            local track_id = get_track_id(entry)
+
+            if track_id == wanted_id and not used[track_id] then
+                table.insert(ordered, entry)
+                used[track_id] = true
+                break
+            end
+        end
+    end
 
     for _, entry in ipairs(list) do
-        if is_beardlib_track(entry, music_mods) then
-            table.insert(beardlib_tracks, entry)
-        else
-            table.insert(vanilla_tracks, entry)
+        local track_id = get_track_id(entry)
+
+        if not track_id or not used[track_id] then
+            table.insert(ordered, entry)
+
+            if track_id then
+                used[track_id] = true
+            end
         end
     end
 
-    for _, entry in ipairs(beardlib_tracks) do
-        table.insert(vanilla_tracks, entry)
-    end
-
-    return vanilla_tracks
+    return ordered
 end
 
 Hooks:PostHook(
