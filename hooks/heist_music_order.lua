@@ -1,5 +1,5 @@
 local heist_music_order = {
-    "new-fight"
+    "new-fight",
     "rabbit-naru-punch"
 }
 
