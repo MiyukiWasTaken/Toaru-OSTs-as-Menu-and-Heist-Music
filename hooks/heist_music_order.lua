@@ -1,5 +1,6 @@
 local heist_music_order = {
     "new-fight"
+    "rabbit-naru-punch"
 }
 
 local function get_track_id(entry)

@@ -91,7 +91,7 @@
     </HeistMusic>
 
     <!-- Rabbit Naru, Punch!, with Scavenger during stealth -->
-    <HeistMusic id="new-fight" directory="soundtracks/Heist/Rabbit Naru Punch!">
+    <HeistMusic id="rabbit-naru-punch" directory="soundtracks/Heist/Rabbit Naru Punch!">
         <event name="setup" source="scavenger.ogg"/>                <!-- Stealth-->
         <event name="control" source="control-rabbit-naru-punch.ogg"/>
         <event name="anticipation" source="anticipation-rabbit-naru-punch.ogg"/>
