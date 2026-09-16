@@ -170,6 +170,6 @@
     "menu_jukebox_new-fight": "New Fight (Index II)",
     "menu_jukebox_screen_new-fight": "New Fight (Index II)",
 
-    "menu_jukebox_rabbit-naru-punch": "Rabbit Naru, Punch!" (Accelerator)",
-    "menu_jukebox_screen_rabbit-naru-punch": "Rabbit Naru, Punch!" (Accelerator)"
+    "menu_jukebox_rabbit-naru-punch": "Rabbit Naru, Punch! (Accelerator)",
+    "menu_jukebox_screen_rabbit-naru-punch": "Rabbit Naru, Punch! (Accelerator)"
 }

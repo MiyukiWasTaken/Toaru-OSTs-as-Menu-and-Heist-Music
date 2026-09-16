@@ -19,27 +19,23 @@ local function reorder_heist_music_list(list)
     local ordered = {}
     local used = {}
 
+    -- Put the custom music first, in the exact order defined above
     for _, wanted_id in ipairs(heist_music_order) do
-        for _, entry in ipairs(list) do
+        for index, entry in ipairs(list) do
             local track_id = get_track_id(entry)
 
-            if track_id == wanted_id and not used[track_id] then
+            if track_id == wanted_id and not used[index] then
                 table.insert(ordered, entry)
-                used[track_id] = true
+                used[index] = true
                 break
             end
         end
     end
 
-    for _, entry in ipairs(list) do
-        local track_id = get_track_id(entry)
-
-        if not track_id or not used[track_id] then
+    -- Keep every other music afterwards, in its original order
+    for index, entry in ipairs(list) do
+        if not used[index] then
             table.insert(ordered, entry)
-
-            if track_id then
-                used[track_id] = true
-            end
         end
     end
 
@@ -55,16 +51,13 @@ Hooks:PostHook(
             return
         end
 
-        local track_heist_list = tweak_data.music.track_heist_list
+        local track_list = tweak_data.music.track_list
 
-        if type(track_heist_list) ~= "table" then
-            track_heist_list = tweak_data.music.heist_track_list
-        end
-
-        if type(track_heist_list) ~= "table" then
+        if type(track_list) ~= "table" then
             return
         end
 
-        tweak_data.music.track_heist_list = reorder_heist_music_list(track_heist_list)
+        tweak_data.music.track_list =
+            reorder_heist_music_list(track_list)
     end
 )
