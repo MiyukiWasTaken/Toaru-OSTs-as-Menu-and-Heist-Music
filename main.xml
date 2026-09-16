@@ -1,4 +1,4 @@
-<table name="Menu">
+<table name="soundtracks">
     <Localization directory="loc" default="en.txt"/>
 
     <Hooks>
@@ -6,11 +6,15 @@
             source_file="lib/managers/musicmanager"
             file="hooks/menu_music_order.lua"
         />
+        <hook
+            source_file="lib/managers/musicmanager"
+            file="hooks/heist_music_order.lua"
+        />
     </Hooks>
 
     <!-- Toaru Majutsu no Index soundtracks -->
-    <MenuMusic id="index-1_psi-missing" source="soundtracks\Menu\Index\PSI-missing.ogg" volume="0.7" />
-    <MenuMusic id="index-1_masterpiece" source="soundtracks\Menu\Index\masterpiece.ogg" volume="0.7" />
+    <MenuMusic id="index-1_psi-missing" source="soundtracks\Menu\Index\PSI-missing.ogg" volume="0.6" />
+    <MenuMusic id="index-1_masterpiece" source="soundtracks\Menu\Index\masterpiece.ogg" volume="0.6" />
     <MenuMusic id="index-1_academy-city" source="soundtracks\Menu\Index\academy-city.ogg" volume="0.6" />
     <MenuMusic id="index-1_anger" source="soundtracks\Menu\Index\anger.ogg" volume="0.6" />
     <MenuMusic id="index-1_daily-life" source="soundtracks\Menu\Index\daily-life.ogg" volume="0.6" />
@@ -27,9 +31,9 @@
     <MenuMusic id="index-1_with-the-usual-friend" source="soundtracks\Menu\Index\with-the-usual-friend.ogg" volume="0.6" />
 
     <!-- Toaru Kagaku no Railgun soundtracks -->
-    <MenuMusic id="railgun_only-my-railgun" source="soundtracks\Menu\Railgun\only-my-railgun.ogg" volume="0.7" />
-    <MenuMusic id="railgun_level5-judelight" source="soundtracks\Menu\Railgun\LEVEL5-judelight-.ogg" volume="0.7" />
-    <MenuMusic id="railgun_future-gazer" source="soundtracks\Menu\Railgun\future-gazer.ogg" volume="0.7" />
+    <MenuMusic id="railgun_only-my-railgun" source="soundtracks\Menu\Railgun\only-my-railgun.ogg" volume="0.6" />
+    <MenuMusic id="railgun_level5-judelight" source="soundtracks\Menu\Railgun\LEVEL5-judelight-.ogg" volume="0.6" />
+    <MenuMusic id="railgun_future-gazer" source="soundtracks\Menu\Railgun\future-gazer.ogg" volume="0.6" />
     <MenuMusic id="railgun_determination" source="soundtracks\Menu\Railgun\determination.ogg" volume="0.6" />
     <MenuMusic id="railgun_hopeless-feeling" source="soundtracks\Menu\Railgun\hopeless-feeling.ogg" volume="0.6" />
     <MenuMusic id="railgun_place-to-return" source="soundtracks\Menu\Railgun\place-to-return.ogg" volume="0.6" />
@@ -43,8 +47,8 @@
     <MenuMusic id="railgun_unstoppable-reason" source="soundtracks\Menu\Railgun\unstoppable-reason.ogg" volume="0.6" />
 
     <!-- Toaru Majutsu no Index II soundtracks -->
-    <MenuMusic id="index-2_no-buts" source="soundtracks\Menu\Index II\no-buts!.ogg" volume="0.7" />
-    <MenuMusic id="index-2_see-visions" source="soundtracks\Menu\Index II\see-visions.ogg" volume="0.7" />
+    <MenuMusic id="index-2_no-buts" source="soundtracks\Menu\Index II\no-buts!.ogg" volume="0.6" />
+    <MenuMusic id="index-2_see-visions" source="soundtracks\Menu\Index II\see-visions.ogg" volume="0.6" />
     <MenuMusic id="index-2_amakusa-style-remix-of-church" source="soundtracks\Menu\Index II\amakusa-style-remix-of-church.ogg" volume="0.6" />
     <MenuMusic id="index-2_introducing-the-strongest" source="soundtracks\Menu\Index II\introducing-the-strongest.ogg" volume="0.6" />
     <MenuMusic id="index-2_misakas-sister" source="soundtracks\Menu\Index II\misakas-sister.ogg" volume="0.6" />
@@ -52,8 +56,8 @@
     <MenuMusic id="index-2_study" source="soundtracks\Menu\Index II\STUDY.ogg" volume="0.6" />
 
     <!-- Toaru Kagaku no Railgun S soundtracks -->
-    <MenuMusic id="railgun-s_sisters-noise" source="soundtracks\Menu\Railgun S\sisters-noise.ogg" volume="0.7" />
-    <MenuMusic id="railgun-s_eternal-reality" source="soundtracks\Menu\Railgun S\eternal-reality.ogg" volume="0.7" />
+    <MenuMusic id="railgun-s_sisters-noise" source="soundtracks\Menu\Railgun S\sisters-noise.ogg" volume="0.6" />
+    <MenuMusic id="railgun-s_eternal-reality" source="soundtracks\Menu\Railgun S\eternal-reality.ogg" volume="0.6" />
     <MenuMusic id="railgun-s_accelerator" source="soundtracks\Menu\Railgun S\accelerator.ogg" volume="0.6" />
     <MenuMusic id="railgun-s_cruel-reality" source="soundtracks\Menu\Railgun S\cruel-reality.ogg" volume="0.6" />
     <MenuMusic id="railgun-s_determination-and-resolution" source="soundtracks\Menu\Railgun S\determination-and-resolution.ogg" volume="0.6" />
@@ -61,39 +65,28 @@
     <MenuMusic id="railgun-s_level-6-shift-project" source="soundtracks\Menu\Railgun S\level-6-shift-project.ogg" volume="0.6" />
 
     <!-- Toaru Accelerator soundtracks -->
-    <MenuMusic id="accelerator_shadow-is-the-light" source="soundtracks\Menu\Accelerator\shadow-is-the-light.ogg" volume="0.7" />
+    <MenuMusic id="accelerator_shadow-is-the-light" source="soundtracks\Menu\Accelerator\shadow-is-the-light.ogg" volume="0.6" />
     <MenuMusic id="accelerator_atmospheric-continuum-mechanics-research-facility" source="soundtracks\Menu\Accelerator\atmospheric-continuum-mechanics-research-facility.ogg" volume="0.6" />
     <MenuMusic id="accelerator_thoughts-of-esther" source="soundtracks\Menu\Accelerator\thoughts-of-esther.ogg" volume="0.6" />
     <MenuMusic id="accelerator_you-arent-a-waste" source="soundtracks\Menu\Accelerator\you-arent-a-waste!!!.ogg" volume="0.6" />
 
     <!-- Toaru Kagaku no Railgun T soundtracks -->
-    <MenuMusic id="railgun-t_final-phase" source="soundtracks\Menu\Railgun T\final-phase.ogg" volume="0.7" />
-    <MenuMusic id="railgun-t_dual-existence" source="soundtracks\Menu\Railgun T\dual-existence.ogg" volume="0.7" />
+    <MenuMusic id="railgun-t_final-phase" source="soundtracks\Menu\Railgun T\final-phase.ogg" volume="0.6" />
+    <MenuMusic id="railgun-t_dual-existence" source="soundtracks\Menu\Railgun T\dual-existence.ogg" volume="0.6" />
     <MenuMusic id="railgun-t_balloon-hunter" source="soundtracks\Menu\Railgun T\balloon-hunter.ogg" volume="0.6" />
     <MenuMusic id="railgun-t_my-genius-ability" source="soundtracks\Menu\Railgun T\my-genius-ability.ogg" volume="0.6" />
     <MenuMusic id="railgun-t_strawberry-yakisoba" source="soundtracks\Menu\Railgun T\strawberry-yakisoba.ogg" volume="0.6" />
 
     <!-- Toaru Majutsu no Index III soundtracks -->
-    <MenuMusic id="index-3_gravitation" source="soundtracks\Menu\Index III\gravitation.ogg" volume="0.7" />
-    <MenuMusic id="index-3_roar" source="soundtracks\Menu\Index III\roar.ogg" volume="0.7" />
+    <MenuMusic id="index-3_gravitation" source="soundtracks\Menu\Index III\gravitation.ogg" volume="0.6" />
+    <MenuMusic id="index-3_roar" source="soundtracks\Menu\Index III\roar.ogg" volume="0.6" />
     <MenuMusic id="index-3_dark-side-conflict" source="soundtracks\Menu\Index III\dark-side-conflict.ogg" volume="0.6" />
-</table>
-
-<table name="Heist">
-    <Localization directory="loc" default="en.txt"/>
-
-    <Hooks>
-        <hook
-            source_file="lib/managers/musicmanager"
-            file="hooks/heist_music_order.lua"
-        />
-    </Hooks>
-
-    <!-- New Fight (From Toaru Majutsu no Index II) + Quiet Stratagem for Stealth (Toaru Kagaku no Railgun S) -->
-    <HeistMusic id="new-fight" directory="soundtracks\Heist\New Fight">
+    
+    <!-- Heist music: New Fight, with Quiet Stratagem during stealth. -->
+    <HeistMusic id="new-fight" directory="soundtracks/Heist/New Fight">
         <event name="setup" source="quiet-stratagem-stealth.ogg"/>
         <event name="control" source="new-fight-control.ogg"/>
         <event name="anticipation" source="new-fight-anticipation.ogg"/>
         <event name="assault" source="new-fight-assault.ogg" start_source="new-fight-assault-start.ogg"/>
     </HeistMusic>
-</table>
+</table> 
