@@ -3,7 +3,7 @@
 	"description": "Custom menu and heist music from the Toaru universe, which groups the Index, Railgun and Accelerator OSTs.",
 	"author": "Miyuki",
 	"contact": "arobasemiyuki on discord",
-	"version": "1.0",
+	"version": "1.1",
 	"blt_version": 2,
 	"image": "icon.png",
 	"main": "main.xml",
