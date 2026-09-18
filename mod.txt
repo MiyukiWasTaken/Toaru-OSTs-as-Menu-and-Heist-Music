@@ -1,5 +1,5 @@
 {
-	"name": "Toaru Menu and Heist OSTs",
+	"name": "Toaru Menu and Heist Musics",
 	"description": "Custom menu and heist music from the Toaru universe, which groups the Index, Railgun and Accelerator OSTs.",
 	"author": "Miyuki",
 	"contact": "arobasemiyuki on discord",
@@ -10,9 +10,7 @@
 		{
 			"identifier": "toaru_menu_musics",
 			"host": {
-				"meta": "https://modworkshop.net/mod/updates?src=mod&id=58811",
-				"download": "https://modworkshop.net/mod/download?src=mod&id=58811",
-				"patchnotes": "https://modworkshop.net/mod/58811"
+				"meta": "https://github.com/TON_COMPTE/TON_REPO/raw/main/updates/meta.json"
 			}
 		}
 	]
