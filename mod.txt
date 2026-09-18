@@ -10,7 +10,7 @@
 		{
 			"identifier": "toaru_menu_musics",
 			"host": {
-				"meta": "https://github.com/TON_COMPTE/TON_REPO/raw/main/updates/meta.json"
+				"meta": "https://github.com/MiyukiWasTaken/Toaru-OSTs-as-Menu-and-Heist-Music/raw/refs/heads/main/updates/meta.json"
 			}
 		}
 	]
