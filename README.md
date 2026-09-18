@@ -1,7 +1,9 @@
-This mod allows you to chose the openings and plenty of OSTs from the Toaru series animes.
+# Toaru Menu and Heist OSTs
+This mod allows you to chose plenty of the Toaru series OSTs as Menu and Heist musics. This also include the openings.
 
 Every soundtracks of this mod has been taken from **Kakine Teitoku**'s "[***A Certain Playlist***](https://www.youtube.com/playlist?list=PLlURqA7x10UjN3r2HZaaLXb-cx-xmOXcN)" playlist, which contains the whole Toaru universe OSTs, huge thanks to him for listing every of those OSTs.
 
+## The Menu Musics 
 I tried to choose the best soundtracks that fit into the 5 (actually 6) different menus which are :
 1. Main screen 
 2. Loadout screen
@@ -10,6 +12,19 @@ I tried to choose the best soundtracks that fit into the 5 (actually 6) differen
 5. Card Picking screen
 6. (and Credits screen but let's be for real who will even modify it ?) 
 
-I could add other ones if needed.
+There is 57 different Menu soundtracks available, some might be removed later (and I might forget to modify this text and not change the 57 value :P).
 
-This is my **first mod** so any positive or negative critics would be very welcomed !ed !
+## The Heist Musics
+I tried to cut the soundtracks the best I could to make good Anticipations, Control loops and Assault loops, even tho my music engineer skills are very limited.
+Both soundtracks are mainly "loud" themed, so I had to pick 2 calm soundtracks for stealth, which are Quiet Stratagem and Scavenger.  
+
+### Links of the Heist soundtracks
+*Track 1 (New Fight) -> Quiet Stratagem (Stealth) and New Fight :* ![](https://www.youtube.com/watch?v=j77FUNiYQes) ![](https://www.youtube.com/watch?v=pxeeWjx9SF4)
+
+*Track 2 (Rabbit Naru, Punch!) -> Scavenger (Stealth) and Rabbit Naru, Punch! :* ![](https://www.youtube.com/watch?v=W-qyoU7av5A) ![](https://www.youtube.com/watch?v=ybwmxKCQwb8)
+
+---
+
+I could add other soundtracks ones if needed (and depending of the weight of the total mod).
+
+This is my **first mod** so any positive or negative critics would be very welcomed !
