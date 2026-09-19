@@ -1,4 +1,5 @@
 > I'm curently having issues with updating the mod through BLT updater in the game, working on it (might take multiple years for me to fix it)
+> 
 > Actually, I think I will give up soon on it because I can't find the exact reason it fails, and since this is not a mod I think I'll update a lot this would just be a lot of effort for something not that important...
 
 # Toaru Menu and Heist OSTs
@@ -22,9 +23,8 @@ I tried to cut the soundtracks the best I could to make good Anticipations, Cont
 Both soundtracks are mainly "loud" themed, so I had to pick 2 calm soundtracks for stealth, which are Quiet Stratagem and Scavenger.  
 
 ### Links of the Heist soundtracks
-*Track 1 (New Fight) -> Quiet Stratagem (Stealth) and New Fight :* ![](https://www.youtube.com/watch?v=j77FUNiYQes) ![](https://www.youtube.com/watch?v=pxeeWjx9SF4)
-
-*Track 2 (Rabbit Naru, Punch!) -> Scavenger (Stealth) and Rabbit Naru, Punch! :* ![](https://www.youtube.com/watch?v=W-qyoU7av5A) ![](https://www.youtube.com/watch?v=ybwmxKCQwb8)
+- Track 1 (New Fight) : [Quiet Stratagem (Stealth)](https://www.youtube.com/watch?v=j77FUNiYQes) and [New Fight](https://www.youtube.com/watch?v=pxeeWjx9SF4)
+- Track 2 (Rabbit Naru, Punch!) : [Scavenger (Stealth)](https://www.youtube.com/watch?v=W-qyoU7av5A) and [Rabbit Naru, Punch!](https://www.youtube.com/watch?v=ybwmxKCQwb8)
 
 ---
 
