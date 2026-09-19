@@ -1,3 +1,6 @@
+> {#FF7777}(I'm curently having issues with updating the mod through BLT updater in the game, working on it (might take multiple years for me to fix it))
+> {#88FFFF}(Actually, I think I will give up soon on it because I can't find the exact reason it fails, and since this is not a mod I think I'll update a lot this would just be a lot of effort for something not that important...)
+
 # Toaru Menu and Heist OSTs
 This mod allows you to chose plenty of the Toaru series OSTs as Menu and Heist musics. This also include the openings.
 
